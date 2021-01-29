@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flopbuster';
+  ishtar = {
+    name: "Ishtar",
+    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg"
+  }
+
+  upVote() {
+    alert("You voted!");
+  }
+
+
+
 }
