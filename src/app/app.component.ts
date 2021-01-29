@@ -12,6 +12,10 @@ export class AppComponent {
     posterUrl: "https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg"
   }
 
+  gigli = {
+    name: "Gigli"
+  }
+
   upVote() {
     alert("You voted!");
   }
