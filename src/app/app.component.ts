@@ -7,26 +7,31 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'flopbuster';
+
+  selectedIndex: number = -1;
+
   ishtar = {
     name: "Ishtar",
-    posterUrl: "https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg"
   }
   gigli = {
     name: "Gigli"
   }
-
   nineteenfortyone = {
     name: "1941"
   }
-
   trolltwo = {
     name: "Troll 2"
   }
 
-  upVote() {
-    alert("You voted!");
+  upVote(index: number) {
+    this.selectedIndex = index;
   }
 
+  isSelected(index: number) {
+    return this.selectedIndex === index;
+  }
 
-
+  anySelected() {
+    return this.selectedIndex !== -1;
+  }
 }
