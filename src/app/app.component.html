@@ -2,25 +2,25 @@
 <body><div>
   <h3 [hidden]="!isSelected(0)">Chosen!</h3>
   <img class="one" src="https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg" width="200" height="300">
-  <h2>{{ ishtar.name }}</h2>
-  <button [disabled]="anySelected()" (click)="upVote(0)">Vote</button>
+  <h2>Ishtar</h2>
+  <button [disabled]="!isSelected(0) && anySelected()" (click)="onVoteClick(0)">{{ getButtonIndex(0) }}</button>
 </div>
 <div>
   <h3 [hidden]="!isSelected(1)">Chosen!</h3>
   <img class="two" width="200" height="300" src="https://images-na.ssl-images-amazon.com/images/I/51WaaGUdBKL._AC_.jpg">
-  <h2>{{ gigli.name }}</h2>
-  <button [disabled]="anySelected()" (click)="upVote(1)">Vote</button>
+  <h2>Gigli</h2>
+  <button [disabled]="!isSelected(1) && anySelected()" (click)="onVoteClick(1)">{{ getButtonIndex(1) }}</button>
 </div>
 <div>
   <h3 [hidden]="!isSelected(2)">Chosen!</h3>
   <img class="three" width="200" height="300" src="https://fffmovieposters.com/wp-content/uploads/46690.jpg">
-  <h2>{{ nineteenfortyone.name }}</h2>
-  <button [disabled]="anySelected()" (click)="upVote(2)">Vote</button>
+  <h2>1941</h2>
+  <button [disabled]="!isSelected(2) && anySelected()" (click)="onVoteClick(2)">{{ getButtonIndex(2) }}</button>
 </div>
 <div>
   <h3 [hidden]="!isSelected(3)">Chosen!</h3>
   <img class="four" width="200" height="300" src="https://www.tampasdowntown.com/wp-content/uploads/2019/10/Troll2_Poster.png">
-  <h2>{{ trolltwo.name }}</h2>
-  <button [disabled]="anySelected()" (click)="upVote(3)">Vote</button>
+  <h2>Troll 2</h2>
+  <button [disabled]="!isSelected(3) && anySelected()" (click)="onVoteClick(3)">{{ getButtonIndex(3) }}</button>
 </div>
 </body>
