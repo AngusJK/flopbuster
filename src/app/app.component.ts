@@ -10,21 +10,12 @@ export class AppComponent {
 
   selectedIndex: number = -1;
 
-  ishtar = {
-    name: "Ishtar",
-  }
-  gigli = {
-    name: "Gigli"
-  }
-  nineteenfortyone = {
-    name: "1941"
-  }
-  trolltwo = {
-    name: "Troll 2"
-  }
-
-  upVote(index: number) {
+  onVoteClick(index: number) {
+    if(this.isSelected(index)) {
+      this.selectedIndex = -1;
+    } else {
     this.selectedIndex = index;
+    }
   }
 
   isSelected(index: number) {
@@ -33,5 +24,13 @@ export class AppComponent {
 
   anySelected() {
     return this.selectedIndex !== -1;
+  }
+
+  getButtonIndex(index: number) {
+    if(this.selectedIndex === index) {
+      return "Unvote";
+    } else {
+      return "Vote";
+    }
   }
 }
