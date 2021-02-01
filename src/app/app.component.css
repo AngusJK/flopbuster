@@ -1,4 +1,15 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  color: brown;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
 div {
-  display: inline-block;
   padding: 20px;
 }
+
