@@ -2,14 +2,19 @@ h1 {
   display: flex;
   justify-content: center;
   color: brown;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: burlywood;
 }
 
 body {
   display: flex;
   justify-content: center;
+  background-color: cadetblue;
 }
 
 div {
   padding: 20px;
+  border-style: solid;
+  border-color: darkblue;
 }
 
