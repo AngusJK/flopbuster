@@ -4,7 +4,10 @@ h1 {
   color: brown;
   font-family: fantasy;
   font-size: xx-large;
-  background-color: white;
+  background-color: rgb(245, 179, 179);
+  width: 400px;
+  margin: auto;
+  padding: 20px;
 }
 
 body {
@@ -13,9 +16,16 @@ body {
 
 }
 
+img {
+  padding: 0;
+  border-style: solid;
+  border-color: #000000;
+}
+
 div {
   padding: 20px;
   border-style: solid;
+  border-radius: 10px;
   border-color: darkblue;
   background-color: cadetblue;
   margin: 5px;
