@@ -9,6 +9,7 @@
     </ul>
   </nav>
   <div id="content">
+
     <div class="poster">
       <h3 [hidden]="!isSelected(0)">Chosen!</h3>
       <img class="one" src="https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg" alt="Ishtar movie poster" width="200" height="300">
@@ -36,6 +37,12 @@
       <img class="four" width="200" height="300" src="https://www.tampasdowntown.com/wp-content/uploads/2019/10/Troll2_Poster.png" alt="Troll 2 movie poster">
       <h2>Troll 2</h2>
       <button [disabled]="!isSelected(3) && anySelected()" (click)="onVoteClick(3)">{{ getButtonIndex(3) }}</button>
+    </div>
+    <div class="poster">
+      <h3 [hidden]="!isSelected(4)">Chosen!</h3>
+      <img class="five" width="200" height="300" src="/assets/images/JohnCarter.jpg" alt="John Carter">
+      <h2>John Carter</h2>
+      <button [disabled]="!isSelected(4) && anySelected()" (click)="onVoteClick(4)">{{ getButtonIndex(4) }}</button>
     </div>
   </div>
   <div id="video">
