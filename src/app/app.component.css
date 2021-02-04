@@ -1,3 +1,11 @@
+nav {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: black;
+  margin: 0;
+}
+
 h1 {
   float: left;
   justify-content: center;
@@ -10,25 +18,15 @@ h1 {
   border: solid red 1px;
 }
 
-nav {
-  height: 50px;
-  width: 100%;
-  background-color: black;
-  margin: 0;
-}
-
-h4 {
-  color: white;
+ul {
   float: right;
-  padding: 10px;
-  text-align: center;
-  margin: 0;
 }
 
-body {
-  display: flex;
-  justify-content: center;
-
+li {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 5px;
 }
 
 img {
@@ -46,8 +44,14 @@ div {
   margin: 5px;
 }
 
+#video {
+  background-color: black;
+  color: white;
+}
+
 button:hover {
   color: white;
   background-color: green;
 }
+
 
