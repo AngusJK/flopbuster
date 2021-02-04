@@ -29,13 +29,18 @@ li {
   padding: 5px;
 }
 
+#content {
+  display: flex;
+  justify-content: center;
+}
+
 img {
   padding: 0;
   border-style: solid;
   border-color: #000000;
 }
 
-div {
+.poster {
   padding: 20px;
   border-style: solid;
   border-radius: 10px;
@@ -47,6 +52,7 @@ div {
 #video {
   background-color: black;
   color: white;
+  display: inline;
 }
 
 button:hover {
