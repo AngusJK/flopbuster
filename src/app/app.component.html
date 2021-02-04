@@ -1,37 +1,47 @@
-<nav>
-  <h1 title="Your mother's a whore">{{ title | uppercase }}</h1>
-  <h4>Home</h4>
-  <h4>About</h4>
-  <h4>Contact Us</h4>
-  <h4>FAQ</h4>
-</nav>
+<body>
+  <nav>
+    <h1 title="Your mother's a whore">{{ title | uppercase }}</h1>
+    <ul>
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact Us</li>
+      <li>FAQ</li>
+    </ul>
+  </nav>
+  <div>
+    <h3 [hidden]="!isSelected(0)">Chosen!</h3>
+    <img class="one" src="https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg" alt="Ishtar movie poster" width="200" height="300">
+    <h2>Ishtar</h2>
+    <button [disabled]="!isSelected(0) && anySelected()" (click)="onVoteClick(0)">{{ getButtonIndex(0) }}</button>
+  </div>
+  <div>
+    <h3 [hidden]="!isSelected(1)">Chosen!</h3>
+    <img class="two" width="200" height="300" src="https://images-na.ssl-images-amazon.com/images/I/51WaaGUdBKL._AC_.jpg" alt="Gigli movie poster" usemap="#jlo">
+    <map name="jlo">
+      <area shape="rect" coords="30, 30, 95, 95" alt="Jennifer Lopez" href="https://en.wikipedia.org/wiki/Jennifer_Lopez" target="_blank">
+      <area shape="rect" coords="100, 15, 150, 80" alt="Ben Affleck" href="https://en.wikipedia.org/wiki/Feces" target="_blank">
+    </map>
+    <h2>Gigli</h2>
+    <button [disabled]="!isSelected(1) && anySelected()" (click)="onVoteClick(1)">{{ getButtonIndex(1) }}</button>
+  </div>
+  <div>
+    <h3 [hidden]="!isSelected(2)">Chosen!</h3>
+    <img class="three" width="200" height="300" src="https://fffmovieposters.com/wp-content/uploads/46690.jpg" alt="1941 movie poster">
+    <h2>1941</h2>
+    <button [disabled]="!isSelected(2) && anySelected()" (click)="onVoteClick(2)">{{ getButtonIndex(2) }}</button>
+  </div>
+  <div>
+    <h3 [hidden]="!isSelected(3)">Chosen!</h3>
+    <img class="four" width="200" height="300" src="https://www.tampasdowntown.com/wp-content/uploads/2019/10/Troll2_Poster.png" alt="Troll 2 movie poster">
+    <h2>Troll 2</h2>
+    <button [disabled]="!isSelected(3) && anySelected()" (click)="onVoteClick(3)">{{ getButtonIndex(3) }}</button>
+  </div>
+<div id="video">
+  <h2>Watch the opening credits of <cite>Ishtar</cite> to get<br>an idea of how badly it sucked.</h2>
+  <iframe width="420" height="315"
+  src="https://www.youtube.com/embed/7CwwCbMq320">
+  </iframe>
+</div>
 
-<body><div>
-  <h3 [hidden]="!isSelected(0)">Chosen!</h3>
-  <img class="one" src="https://m.media-amazon.com/images/M/MV5BZjZmMzc0NmEtZTEwZi00ZWQyLWEwZjItNWJjMDZlODAxNjIwXkEyXkFqcGdeQXVyNzc5MjA3OA@@._V1_.jpg" alt="Ishtar movie poster" width="200" height="300">
-  <h2>Ishtar</h2>
-  <button [disabled]="!isSelected(0) && anySelected()" (click)="onVoteClick(0)">{{ getButtonIndex(0) }}</button>
-</div>
-<div>
-  <h3 [hidden]="!isSelected(1)">Chosen!</h3>
-  <img class="two" width="200" height="300" src="https://images-na.ssl-images-amazon.com/images/I/51WaaGUdBKL._AC_.jpg" alt="Gigli movie poster" usemap="#jlo">
-  <map name="jlo">
-    <area shape="rect" coords="30, 30, 95, 95" alt="Jennifer Lopez" href="https://en.wikipedia.org/wiki/Jennifer_Lopez" target="_blank">
-    <area shape="rect" coords="100, 15, 150, 80" alt="Ben Affleck" href="https://en.wikipedia.org/wiki/Feces" target="_blank">
-  </map>
-  <h2>Gigli</h2>
-  <button [disabled]="!isSelected(1) && anySelected()" (click)="onVoteClick(1)">{{ getButtonIndex(1) }}</button>
-</div>
-<div>
-  <h3 [hidden]="!isSelected(2)">Chosen!</h3>
-  <img class="three" width="200" height="300" src="https://fffmovieposters.com/wp-content/uploads/46690.jpg" alt="1941 movie poster">
-  <h2>1941</h2>
-  <button [disabled]="!isSelected(2) && anySelected()" (click)="onVoteClick(2)">{{ getButtonIndex(2) }}</button>
-</div>
-<div>
-  <h3 [hidden]="!isSelected(3)">Chosen!</h3>
-  <img class="four" width="200" height="300" src="https://www.tampasdowntown.com/wp-content/uploads/2019/10/Troll2_Poster.png" alt="Troll 2 movie poster">
-  <h2>Troll 2</h2>
-  <button [disabled]="!isSelected(3) && anySelected()" (click)="onVoteClick(3)">{{ getButtonIndex(3) }}</button>
-</div>
 </body>
+
