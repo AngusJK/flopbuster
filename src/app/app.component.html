@@ -8,15 +8,15 @@
       <li>FAQ</li>
     </ul>
   </nav>
-  <div id="content">
 
-    <div class="poster">
+  <div class="row" id="content">
+    <div class="poster col-md-2">
       <h3 [hidden]="!isSelected(0)">Chosen!</h3>
       <img class="one" src="/assets/images/ishtar.jpg" alt="Ishtar movie poster" width="200" height="300">
       <h2>Ishtar</h2>
       <button [disabled]="!isSelected(0) && anySelected()" (click)="onVoteClick(0)">{{ getButtonIndex(0) }}</button>
     </div>
-    <div class="poster">
+    <div class="poster col-md-2">
       <h3 [hidden]="!isSelected(1)">Chosen!</h3>
       <img class="two" width="200" height="300" src="assets/images/gigli.jpg" alt="Gigli movie poster" usemap="#jlo">
       <map name="jlo">
@@ -26,30 +26,32 @@
       <h2>Gigli</h2>
       <button [disabled]="!isSelected(1) && anySelected()" (click)="onVoteClick(1)">{{ getButtonIndex(1) }}</button>
     </div>
-    <div class="poster">
+    <div class="poster col-md-2">
       <h3 [hidden]="!isSelected(2)">Chosen!</h3>
       <img class="three" width="200" height="300" src="/assets/images/nineteen-forty-one.jpg" alt="1941 movie poster">
       <h2>1941</h2>
       <button [disabled]="!isSelected(2) && anySelected()" (click)="onVoteClick(2)">{{ getButtonIndex(2) }}</button>
     </div>
-    <div class="poster">
+    <div class="poster col-md-2">
       <h3 [hidden]="!isSelected(3)">Chosen!</h3>
       <img class="four" width="200" height="300" src="/assets/images/troll-2.png" alt="Troll 2 movie poster">
       <h2>Troll 2</h2>
       <button [disabled]="!isSelected(3) && anySelected()" (click)="onVoteClick(3)">{{ getButtonIndex(3) }}</button>
     </div>
-    <div class="poster">
+    <div class="poster col-md-2">
       <h3 [hidden]="!isSelected(4)">Chosen!</h3>
       <img class="five" width="200" height="300" src="/assets/images/john-carter.jpg" alt="John Carter">
       <h2>John Carter</h2>
       <button [disabled]="!isSelected(4) && anySelected()" (click)="onVoteClick(4)">{{ getButtonIndex(4) }}</button>
     </div>
   </div>
+
   <div id="video">
     <h2>Watch the opening credits of <cite>Ishtar</cite> to get<br>an idea of how badly it sucked.</h2>
     <iframe width="420" height="315"
     src="https://www.youtube.com/embed/7CwwCbMq320">
     </iframe>
   </div>
+
 </body>
 
