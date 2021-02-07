@@ -11,6 +11,7 @@ nav {
   margin: 0;
 }
 */
+/*
 h1 {
   float: left;
   justify-content: center;
@@ -23,13 +24,23 @@ h1 {
   background-color: black;
   padding: 7px 15px;
 }
-
+*/
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: #888888;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#logo {
+  font-size: x-large;
+  padding: 8px;
+  font-family: 'Anton', sans-serif;
+  color: yellow;
 }
 
 li {
@@ -45,6 +56,10 @@ li a {
 
 li:hover {
   background-color: rgba(70, 53, 53, 0.406);
+}
+
+li:last-child:hover {
+  background-color: inherit;
 }
 
 img {
