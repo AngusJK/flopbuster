@@ -60,6 +60,8 @@ img {
 .row {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 70px;
+  padding-bottom: 50px;
 }
 
 button:hover {
@@ -69,7 +71,7 @@ button:hover {
 
 /* contains styles for the video */
 
-#video-div h2 {
+#video {
   color: white;
 }
 
